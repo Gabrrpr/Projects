@@ -7,7 +7,7 @@ import re
 
 def create_table():
     try:
-        project_folder = r"C:\Users\Gabriel\Projects\Python"
+        project_folder = r"C:\Users\Gabriel\Projects\Python\Data Folder"
         db_path = os.path.join(project_folder, "Projects.db")
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
@@ -115,7 +115,7 @@ def add_contact(name, phone, email, category):
         print("Invalid email address.")
         return
     try:
-        project_folder = r"C:\Users\Gabriel\Projects\Python"
+        project_folder = r"C:\Users\Gabriel\Projects\Python\Data Folder"
         db_path = os.path.join(project_folder, "Projects.db")
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
@@ -131,7 +131,7 @@ def add_contact(name, phone, email, category):
 
 def search_contact(query):
     try:
-        project_folder = r"C:\Users\Gabriel\Projects\Python"
+        project_folder = r"C:\Users\Gabriel\Projects\Python\Data Folder"
         db_path = os.path.join(project_folder, "Projects.db")
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
@@ -147,7 +147,7 @@ def search_contact(query):
 
 def sort_contacts(sort_by):
     try:
-        project_folder = r"C:\Users\Gabriel\Projects\Python"
+        project_folder = r"C:\Users\Gabriel\Projects\Python\Data Folder"
         db_path = os.path.join(project_folder, "Projects.db")
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
@@ -162,7 +162,7 @@ def sort_contacts(sort_by):
 
 def view_contacts():
     try:
-        project_folder = r"C:\Users\Gabriel\Projects\Python"
+        project_folder = r"C:\Users\Gabriel\Projects\Python\Data Folder"
         db_path = os.path.join(project_folder, "Projects.db")
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
@@ -176,7 +176,7 @@ def view_contacts():
 
 def update_contact(contact_id, name, phone, email, category):
     try:
-        project_folder = r"C:\Users\Gabriel\Projects\Python"
+        project_folder = r"C:\Users\Gabriel\Projects\Python\Data Folder"
         db_path = os.path.join(project_folder, "Projects.db")
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
@@ -195,7 +195,7 @@ def delete_contact(contact_id):
         print("No contact selected for deletion.")
         return
     try:
-        project_folder = r"C:\Users\Gabriel\Projects\Python"
+        project_folder = r"C:\Users\Gabriel\Projects\Python\Data Folder"
         db_path = os.path.join(project_folder, "Projects.db")
         conn = sqlite3.connect(db_path)
         cursor = conn.cursor()
